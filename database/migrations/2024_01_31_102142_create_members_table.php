@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //会員テーブルのカラムを定義
         Schema::create('members', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->index();
             $table->string('name');
+            $table->string('tel');
+            $table->string('email');
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\memberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/members', [App\Http\Controllers\MemberController::class, 'index'])->name('members');
+//コントローラのstoreメソッドの処理が行われる
+Route::post('/member', [App\Http\Controllers\MemberController::class, 'store'])->name('member');
+Route::delete('/member/{member}',[App\Http\Controllers\MemberController::class, 'delete'])->name('/member/{member}');
