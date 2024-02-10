@@ -2,12 +2,14 @@
 
 @section('content')
 
+<!--登録ボタン-->
+<a href="/members/create">登録</a>
 
 <!-- メンバー一覧表示 -->
 @if (count($members) > 0)
 <div class="panel panel-default">
    <div class="panel-heading">
-       会員一覧画面
+      <h1> 会員一覧画面</h1>
    </div>
 
    <div class="panel-body">
@@ -43,10 +45,9 @@
 
                    <td>
                         <!-- 編集ボタン -->
-                        <a href="{{ url('member/'.$member->id).'/edit' }}" class="btn btn-warning" >
+                        <a href="{{ url('member/edit/'.$member->id) }}" class="btn btn-warning" >
                             <i class="fa fa-btn fa-trash"></i>編集
                         </a>
-                       </form>
                    </td>
                </tr>
                @endforeach
