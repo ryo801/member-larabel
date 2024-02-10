@@ -26,6 +26,7 @@ Route::post('/member/delete/{member}',[MemberController::class, 'delete']);
 
 //会員登録画面用のルート
 Route::get('/members/create', [MemberController::class, 'create']);
+//この書き方でも動くけど「create」が複数あると混乱するので「post store」でルートを作る
 //Route::post('/members/create', [MemberController::class, 'store']);
 Route::post('/members/store',[MemberController::class, 'store']);
 
