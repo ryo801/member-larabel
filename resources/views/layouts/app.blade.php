@@ -33,14 +33,14 @@
                </button>
 
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <!-- Left Side Of Navbar -->
+                   <!-- Left Side Of Navbar ナビゲーションバーの左側-->
                    <ul class="navbar-nav mr-auto">
 
                    </ul>
 
-                   <!-- Right Side Of Navbar -->
+                   <!-- Right Side Of Navbar ナビゲーションバーの右側-->
                    <ul class="navbar-nav ml-auto">
-                       <!-- Authentication Links -->
+                       <!-- Authentication Links　認証リンク -->
                        @guest
                        @if (Route::has('login'))
                        <li class="nav-item">
@@ -77,7 +77,8 @@
        </nav>
 
        <main class="py-4">
-           @yield('content')
+        <!-- yield('content')　（アットイエルド）という「ブレード」の構文がある。これは画面別のビューを挿入する部分になる。-->
+           @yield('content') 
        </main>
    </div>
 </body>

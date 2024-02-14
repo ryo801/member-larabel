@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*
+会員一覧画面
+**/
+
+/* app.css */
+
+.html{
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*中央寄せ*/
+body{
+    text-align: center;
+}
+
+/*登録ボタン*/
+a{
+    text-align: right;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.center{
+    text-align: center;
+}
+
+header{
+    height: 50px;
+}
+
+/* 会員一覧画面の文字サイズ */
+.table-text {
+    font-size: 20px;
+}
+
+th,td {
+    border: solid 1px;  /* 枠線指定 */
+    padding: 10px;      /* 余白指定 */    
+}
+
+/* テーブル */
+table {
+    border-collapse:  collapse;     /* セルの線を重ねる */
+}
+
+th{
+    height: 70%;
+}
+
+td {
+    text-align:  center;        /* 文字の揃え位置指定 */
+}
+
+/*見出し*/
+h1{
+    text-align: center;
+}
+
+/*登録ボタン*/
+.right-top{
+    position: fixed;
+    top: 20px; /*上からの位置 */
+    right: 20px; /*右からの位置*/
+}
+
+/*会員登録・編集画面・テキストボックス*/
+
+input{
+    margin-bottom: 10px;
+}
+button{
+    width: 50%;
+    height: 7%;
+    margin-bottom: 5px; 
+    font-size: 15px; 
+}
+input{
+    width: 60%;
+    height: 10%;
+    font-size: 20px;
+}
