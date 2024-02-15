@@ -23,7 +23,7 @@
 </head>
 
 <!--登録ボタン-->
-<a href="/members/create" class="right-top">登録</a>
+<a href="/members/create" class="right-top">>> 登録</a>
 
 <!-- メンバー一覧表示 -->
 @if (count($members) > 0)
@@ -66,7 +66,7 @@
                    <td>
                         <!-- 編集ボタン -->
                         <a href="{{ url('member/edit/'.$member->id) }}" class="btn btn-warning" >
-                            <i class="fa fa-btn fa-trash"></i>編集
+                            <i class="fa fa-btn fa-trash"></i>>> 編集
                         </a>
                    </td>
                </tr>

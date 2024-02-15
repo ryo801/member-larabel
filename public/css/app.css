@@ -67,6 +67,7 @@ td {
 /*見出し*/
 h1{
     text-align: center;
+    margin-top: 20px;
 }
 
 /*登録ボタン*/
@@ -80,8 +81,10 @@ h1{
 
 input{
     margin-bottom: 10px;
-}
-button{
+} 
+
+/*laravelボタンまで影響が出ていたのを防ぐ*/
+.panel-body button{
     width: 50%;
     height: 7%;
     margin-bottom: 5px; 
@@ -91,4 +94,9 @@ input{
     width: 60%;
     height: 10%;
     font-size: 20px;
+}
+
+/*laravelボタン消去*/
+.navbar-toggler{
+    display: none;
 }
